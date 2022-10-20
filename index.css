@@ -1,0 +1,2067 @@
+/**  AQUI É RETIRADO TODAS AS BORDAS E MARGENS DE DEFINIÇÕES PADÕRES  **/
+* {
+    border: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/**  AQUI É TERMINA A REMOÇÃO DE BORDAS E MARGENS DE DEFINIÇÕES PADÕRES  **/
+
+
+
+
+/**  AQUI SÃO INSERIDAS AS PALETAS DE CORES A SEREM UTILIZADAS  **/
+
+/**  AQUI É FINALIZADO AS PALETAS DE CORES A SEREM UTILIZADAS  **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DE CARACTERISTICAS PADÕRES A SEREM APLICADAS EM TODA APLICAÇÃO  **/
+body {
+    font-family: "Source Sans Pro";
+    color: #444;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+html {
+    width: 100%;
+}
+
+/**  AQUI FINALIZA A ESTILIZAÇÃO DE CARACTERISTICAS PADÕRES A SEREM APLICADAS EM TODA APLICAÇÃO  **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DO TOPO REDES SOCIAIS  **/
+.toporedes {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    height: 53px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toporedes ul {
+    background-color: #000000;
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-left: 825px;
+}
+
+.toporedes ul li {
+    background-color: #000000;
+    display: flex;
+    height: 35px;
+    flex-direction: row;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.toporedes ul li img {
+    background-color: #000000;
+    display: flex;
+    height: 25px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.toporedes .icons-toporedes {
+    display: flex;
+    height: 65px;
+
+    color: #f8f9fa;
+    z-index: 1000;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    left: 460px;
+}
+
+.toporedes .icons-toporedes img {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.toporedes .icons-toporedes a {
+    height: 100%;
+    width: 145px;
+    color: #f8f9fa;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-size: 12px;
+}
+
+/**  AQUI FINALIZA A ESTILIZAÇÃO DO TOPO REDES SOCIAIS  **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DO TOPO MENU PRINCIPAL  **/
+header {
+    width: 100%;
+    height: 91px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 70;
+    align-items: center;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+}
+
+header #topofilho {
+    max-width: 1024px;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #topofilho figure a img {
+    width: 190px;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#links-topo {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+#links-topo a {
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255, 0.7);
+    text-decoration: none;
+    padding: 15px;
+    padding-bottom: 35px;
+    transition: 0.4s;
+    cursor: pointer;
+    width: 100%;
+}
+
+#links-topo a:hover {
+    color: rgb(255, 255, 255, 1.0);
+    border-bottom: 4px solid #f49334;
+    padding-bottom: 35px;
+}
+
+.active {
+    color: rgb(255, 255, 255, 1.0);
+    border-bottom: 4px solid #f49334;
+    padding-bottom: 35px;
+}
+
+/**  AQUI TERMINA A ESTILIZAÇÃO DO TOPO MENU PRINCIPAL  **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO SLIDE BAR **/
+.slider {
+    margin: 0 auto;
+    height: 865px;
+    width: 1903px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 1903px;
+    height: 100%;
+
+}
+
+.navegacaomanual {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navegacaomanual .manual-btn {
+    border: 2px solid #f8f9fa;
+    background-color: #f8f9fa;
+    opacity: 0.2;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navegacaomanual .manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navegacaomanual .manual-btn:hover {
+    background-color: #f8f9fa;
+}
+
+.slider input {
+    display: none;
+}
+
+#botao1:checked~.first {
+    margin: 0px;
+    transition: 1s;
+}
+
+#botao2:checked~.first {
+    margin-left: -25%;
+    transition: 1s;
+}
+
+#botao3:checked~.first {
+    margin-left: -50%;
+    transition: 1s;
+}
+
+#botao4:checked~.first {
+    margin-left: -75%;
+    transition: 1s;
+}
+
+.navegacaoauto div {
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.navegacaoauto {
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navegacaoauto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#botao1:checked~.navegacaoauto .auto-btn1 {
+    background-color: #f8f9fa;
+    transform: scale(1.2);
+}
+
+#botao2:checked~.navegacaoauto .auto-btn2 {
+    background-color: #f8f9fa;
+    transform: scale(1.2);
+}
+
+#botao3:checked~.navegacaoauto .auto-btn3 {
+    background-color: #f8f9fa;
+    transform: scale(1.2);
+}
+
+#botao4:checked~.navegacaoauto .auto-btn4 {
+    background-color: #f8f9fa;
+
+}
+
+.desc-slid-topo {
+    margin-left: 200px;
+    display: flex;
+    width: 920px;
+    color: #f8f9fa;
+    font-size: 100px;
+    letter-spacing: -3.48px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+}
+
+.desc-slid-topo p {
+    width: 100%;
+}
+
+
+
+.desc-slid-topo span {
+    color: #f49334;
+}
+
+
+.desc-slid-topo1 {
+    margin-left: 200px;
+    display: flex;
+    width: 1400px;
+    color: #f8f9fa;
+    font-size: 100px;
+    letter-spacing: -3.48px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 150px;
+}
+
+.desc-slid-topo1 span {
+    color: #f49334;
+}
+
+span {
+    color: #f49334;
+}
+
+
+/**  FIM ESTILIZAÇÃO SLIDE BAR **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DO FUNDO ABAIXO DO TOPO FUTURO SLIDE BAR **/
+/**
+body .fundorecepcao {
+    background-image: url(img/bbb.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 865px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body .fundorecepcao .tituloh1 {
+    max-width: 1024px;
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body .fundorecepcao .tituloh1 h1 {
+    height: 100px;
+    font-size: 50px;
+    color: #f8f9fa;
+    display: flex;
+}
+
+body .fundorecepcao img {
+    height: 100px;
+    display: flex;
+    z-index: 7000;
+} 
+ **/
+/**  AQUI TERMINA A ESTILIZAÇÃO DO FUNDO ABAIXO DO TOPO  **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DA SEÇÃO SOBRE **/
+body main {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sobrepai .sobrefilho {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+
+
+}
+
+.sobrepai .sobrefilho .iniciosecao {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sobrepai .sobrefilho .iniciosecao p img {
+    display: flex;
+    justify-content: flex-start;
+    width: 150px;
+}
+
+
+.sobrepai .sobrefilho .iniciosecao h2 {
+    margin-top: 20px;
+    font-size: 16px;
+    color: orange;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.sobrepai .sobrefilho .iniciosecao h1 {
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.sobrepai .sobrefilho .iniciosecao p {
+    font-size: 20px;
+    text-align: start;
+    width: 910px;
+
+}
+
+.sobrepai .sobrefilho h1 {
+    font-size: 20px;
+    color: #444;
+}
+
+.sobrefilho .descsobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    height: 510px;
+}
+
+.sobrefilho .desclista ul li {
+    text-decoration: none;
+}
+
+.sobrefilho .desclista .botinfo {
+    display: flex;
+    width: 300px;
+    background-color: #f49334;
+    text-decoration: none;
+    color: #f8f9fa;
+    margin-top: 35px;
+    padding: 10px 25px;
+    font-size: 22px;
+    border-radius: 25px;
+    justify-content: center;
+    transition: ease-in 0.2s;
+    align-items: center;
+
+}
+
+.sobrefilho .desclista .botinfo:hover {
+    padding-right: 15px;
+    background-color: black;
+    color: #f8f9fa;
+}
+
+.sobrefilho .desclista .botinfo img {
+    margin-left: 10px;
+    align-items: center;
+    display: flex;
+    width: 50px;
+}
+
+.sobrefilho .desclista {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/**  AQUI FINALIZA A ESTILIZAÇÃO DA SEÇÃO SOBRE **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DA SEÇÃO SUSTENTABILIDADE **/
+.sustentabilidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.sustentabilidade .secao2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sustentabilidade .secao2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5px;
+}
+
+.sustentabilidade .secao2 div .iconlista {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 895px;
+
+}
+
+.secao2 div img {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+
+.sustentabilidade .secao2 h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: rgb(201, 134, 10);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.sustentabilidade .secao2 h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+
+}
+
+.sustentabilidade .secao2 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    font-size: 20px;
+    width: 869px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.sustentabilidade video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.desc-video {
+    margin-left: 125px;
+    display: flex;
+    width: 600px;
+    color: #f8f9fa;
+    font-size: 100px;
+    letter-spacing: -3.48px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2900px;
+}
+
+.desc-video span {
+    color: #f49334;
+}
+
+.secao2 span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/**  AQUI FINALIZA A ESTILIZAÇÃO DA SEÇÃO SUSTENTABILIDADE **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DA SEÇÃO ESPECIALIDADES (CARDS) **/
+#especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(68, 68, 68, 0.2);
+}
+
+#especialidades .especialidadesfilho {
+    width: 1024px;
+    max-width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+}
+
+#especialidades .especialidadesfilho .iniciosecao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#especialidades .especialidadesfilho .iniciosecao h1 {
+    font-size: 48px;
+}
+
+#especialidades .especialidadesfilho .iniciosecao p {
+    font-size: 20px;
+    display: flex;
+    text-align: start;
+    width: 810px;
+}
+
+.iniciosecao div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25px;
+}
+
+.iniciosecao div p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 855px;
+
+}
+
+.iniciosecao div img {
+    display: flex;
+    width: 150px;
+    justify-content: center;
+}
+
+
+#cardspai {
+    display: flex;
+    width: 1024px;
+    height: 600px;
+    max-width: 1024px;
+    justify-content: center;
+
+
+}
+
+#cardspai .cardsfilho {
+    width: 350px;
+    margin: 35px;
+    height: 400px;
+    box-shadow: 4px 4px 4px 4px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: 0.5s;
+
+
+}
+
+#cardspai .cardsfilho:hover {
+    transform: scale(1.2);
+}
+
+#cardspai .cardsfilho .imgcards {
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+    image-rendering: auto;
+
+}
+
+#cardspai .cardsfilho a {
+    text-decoration: none;
+    color: #0000008c;
+    height: 35px;
+}
+
+#cardspai .cardsfilho a:hover {
+    text-decoration: none;
+    color: orange;
+    height: 35px;
+    font-weight: bold;
+}
+
+#cardspai .cardsfilho a p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    background-color: transparent;
+}
+
+.especialidadesfilho .botao {
+    background-color: rgb(33, 33, 33);
+    width: 250px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 25px;
+    color: #f8f9fa;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.5S;
+    margin-bottom: 50px;
+    padding-left: 10px;
+}
+
+.especialidadesfilho .botao img {
+    margin-left: 15px;
+    align-items: center;
+    display: flex;
+    width: 35px;
+
+}
+
+.especialidadesfilho .botao:hover {
+    background-color: #f49334;
+    color: #f8f9fa;
+    padding-left: 25px;
+}
+
+/**  AQUI FINALIZA A ESTILIZAÇÃO DA SEÇÃO ESPECIALIDADES (CARDS) **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DA SEÇÃO CLIENTES BAIKAL **/
+.clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #000000;
+}
+
+.clientes h1 {
+    font-size: 48px;
+    font-weight: 40;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f8f9fa;
+}
+
+.clientes .linhaclientes {
+    margin-top: 30px;
+    border: 2px solid #f49334;
+    border-bottom: #f49334;
+    height: 2px;
+    width: 180px;
+}
+
+.clientes .cardsclientes {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 1000px;
+}
+
+
+.clientes .cardsclientes img {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    opacity: 60%;
+}
+
+
+.clientes .cardsclientes img:hover {
+    opacity: 100%;
+}
+
+
+
+
+/**  AQUI FINALIZA A SEÇÃO CLIENTES BAIKAL **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DA SEÇÃO VALORES BAIKAL **/
+.valoresbaikal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.valoresbaikal img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+/**  AQUI FINALIZA A ESTILIZAÇÃO DA SEÇÃO VALORES BAIKAL **/
+
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DA SEÇÃO CONTATO **/
+
+.cx-geral-contato {
+    background-image: url(img/105.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 705px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cx-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cx-form-contato {
+    width: 570px;
+    height: 467px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px
+}
+
+.cx-campo-form {
+    display: flex;
+    flex-direction: column;
+    color: #f8f9fa;
+    height: 91px;
+
+}
+
+.cx-campo-form .label-form {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+#contact-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#contact-form .fieldset1-form {
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+#contact-form .fieldset2-form {
+    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 102%;
+
+}
+
+.cx-campo-form input,
+.cx-campo-form select,
+.cx-campo-form textarea {
+    border-radius: 5px;
+    height: 44px;
+    font-size: 16px;
+    outline: 0;
+}
+
+.cx-campo-form select:focus {
+    font-size: 16px;
+    color: #444;
+}
+
+.cx-texto {
+    height: 130px;
+}
+
+.cx-texto textarea {
+    height: 130px;
+}
+
+.submit-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+}
+
+.submit-form input {
+    background-color: #f49334;
+    color: #f8f9fa;
+    padding: 0px 30px;
+    height: 100%;
+    font-weight: 600;
+    transition: ease-in-out 0.3s;
+
+}
+
+.submit-form input:hover {
+    background-color: #000000;
+    color: #f8f9fa;
+    padding: 0px 30px;
+    height: 100%;
+    font-weight: 600;
+
+}
+
+.cx-desc-contato {
+    width: 500px;
+    height: 419px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.desc-contato h1 {
+    font-size: 40px;
+    color: #f49334;
+    margin-bottom: 10px;
+}
+
+.desc-contato p {
+    font-size: 15px;
+    color: #f8f9fa;
+    margin-bottom: 25px;
+}
+
+.cx-lks-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+
+}
+
+.cx-lks-contato p {
+    font-size: 18px;
+    color: #f8f9fa;
+    font-weight: 500;
+    display: flex;
+
+}
+
+.cx-lks-contato .img-icone-contato {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    margin-right: 5px;
+
+}
+
+/**  AQUI FINALIZA A ESTILIZAÇÃO DA SEÇÃO CONTATO **/
+
+
+
+/**  AQUI INICIA A ESTILIZAÇÃO DO RODAPÉ **/
+#footerpai {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000000;
+    padding-top: 50px;
+
+}
+
+footer .cx-logo-rodape {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+footer .cx-logo-rodape div {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 150px;
+
+}
+
+.img-lks-seguro-rodape {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.linha1-footer-rodape {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    width: 1350px;
+}
+
+.cx-secoes-rodape {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f8f9fa;
+}
+
+.cx-secoes-rodape h1 {
+    color: #f8f9fa;
+    font-size: 18px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+
+
+}
+
+footer .cx-logo-rodape .logo-rodape img {
+    width: 240px;
+    height: 200px;
+}
+
+.lks-seguro-rodape img {
+    width: 100px;
+    height: 60px;
+}
+
+.cx-sobre-rodape,
+.cx-servicos-rodape,
+.cx-contato-rodape,
+.cx-social-rodape {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f8f9fa;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cx-lks-sobre-rodape,
+.cx-lks-servicos-rodape,
+.cx-lks-contato-rodape,
+.cx-lks-social-rodape {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cx-contato-rodape a img {
+    margin-right: 10px;
+    height: 28px;
+    width: 28px;
+    opacity: 0.5;
+
+
+}
+
+.cx-social-rodape a img {
+    margin-right: 10px;
+    height: 25px;
+    width: 25px;
+
+}
+
+
+.cx-lks-sobre-rodape a,
+.cx-lks-servicos-rodape a,
+.cx-lks-contato-rodape a,
+.cx-lks-social-rodape a {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.3);
+    height: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    align-items: center;
+}
+
+.cx-lks-sobre-rodape a:hover,
+.cx-lks-servicos-rodape a:hover,
+.cx-lks-contato-rodape a:hover,
+.cx-lks-social-rodape a:hover {
+    color: rgb(255, 255, 255, 0.8);
+}
+
+
+
+footer .subrodape {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #f8f9fa;
+    position: relative;
+    border-top: 1px solid rgb(240, 248, 255, 0.1);
+}
+
+#footerpai .subrodape p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    width: 1024px;
+    max-width: 1024px;
+    height: 90px;
+}
+
+/**  AQUI FINALIZA A ESTILIZAÇÃO DO RODAPÉ **/
+
+
+
+
+/**  AQUI INICIA A MEDIA QUERIES (RESPONSIVIDADE) VERSÃO MOBILE CELULAR **/
+
+@media (max-width: 425px) {
+
+    #topopai,
+    body,
+    html,
+    #footerpai {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    #topopai {
+        height: 130px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    #footerpai {
+        width: 100%;
+        max-width: 425px;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media (max-width: 425px) {
+    footer .cx-logo-rodape {
+        width: 100%;
+        max-width: 425px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+}
+
+
+@media (max-width: 425px) {
+    #footerpai .subrodape {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(41, 40, 40, 1.0);
+        color: #f8f9fa;
+        position: relative;
+        top: 10px;
+        border-top: 1px solid rgb(240, 248, 255, 0.1);
+        font-size: 12px;
+    }
+
+    #footerpai .subrodape p {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        width: 100%;
+        max-width: 425px;
+
+    }
+}
+
+@media (max-width: 425px) {
+    header #topofilho {
+        max-width: 425px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 425px) {
+    body .fundorecepcao {
+        background-image: url(img/apresentacao.png);
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        height: 200px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body .fundorecepcao .tituloh1 {
+        max-width: 425px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    body .fundorecepcao .tituloh1 h1 {
+        height: 100px;
+        font-size: 25px;
+        color: rgb(240, 248, 255, 0.9);
+        display: flex;
+
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .sobrefilho .descsobre .imgmedico {
+        display: none;
+
+    }
+}
+
+@media (max-width: 425px) {
+    .iniciosecao p {
+        padding: 20px;
+        width: 100%;
+        max-width: 425px
+    }
+}
+
+@media (max-width: 425px) {
+    .descsobre .desclista h1 {
+        font-size: 16px;
+        padding: 0px 0px 20px;
+
+    }
+}
+
+
+@media (max-width: 425px) {
+    #especialidades {
+        width: 100%;
+        max-width: 425px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(68, 68, 68, 0.2);
+        border-top: 1px solid rgb(68, 68, 68, 0.2);
+    }
+
+    #especialidades .especialidadesfilho {
+        width: 100%;
+        max-width: 425px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao h1 {
+        font-size: 16px;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao p {
+        font-size: 13px;
+
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao br {
+        display: none;
+
+    }
+
+    #cardspai {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #cardspai .cardsfilho {
+        display: flex;
+        width: 80%;
+        margin: 15px;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+    #cardspai .cardsfilho:hover {
+        transform: scale(1.1);
+    }
+
+    #cardspai .cardsfilho .imgcards {
+        width: 100%;
+    }
+
+    #cardspai .cardsfilho a {
+        text-decoration: none;
+        color: #0000008c;
+    }
+
+    #cardspai .cardsfilho a p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+    }
+
+    .especialidadesfilho .botao {
+        background-color: rgb(33, 33, 33);
+        width: 150px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        text-decoration: none;
+        border: 2px solid rgb(33, 33, 33, 1.0);
+        border-radius: 3px;
+        color: #f8f9fa;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.5S;
+    }
+
+    .especialidadesfilho .botao:hover {
+        background-color: rgb(243, 243, 243);
+        color: #444;
+
+    }
+}
+
+
+/**  AQUI FINALIZA A MEDIA QUERIES (RESPONSIVIDADE) VERSÃO MOBILE CELULAR **/
+
+
+
+
+
+
+
+/**  AQUI INICIA A MEDIA QUERIES (RESPONSIVIDADE) VERSÃO TABLET **/
+
+@media (min-width: 426px) and (max-width: 768px) {
+
+    #topopai,
+    body,
+    html,
+    #footerpai {
+        width: 100%;
+
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #topopai {
+        height: 130px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    body #footerpai {
+        width: 100%;
+        min-width: 426px;
+        max-width: 768px;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    footer .cx-logo-rodape {
+        width: 100%;
+        min-width: 426px;
+        max-width: 768px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #footerpai .subrodape {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(41, 40, 40, 1.0);
+        color: #f8f9fa;
+        position: relative;
+        top: 10px;
+        border-top: 1px solid rgb(240, 248, 255, 0.1);
+        font-size: 12px;
+    }
+
+    #footerpai .subrodape p {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        width: 100%;
+        min-width: 426px;
+        max-width: 768px;
+
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    header #topofilho {
+        min-width: 426px;
+        max-width: 768px;
+        width: 768px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    body .fundorecepcao {
+        background-image: url(img/apresentacao.png);
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body .fundorecepcao .tituloh1 {
+        min-width: 426px;
+        max-width: 768px;
+        width: 768px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    body .fundorecepcao .tituloh1 h1 {
+        height: 100px;
+        font-size: 25px;
+        color: rgb(240, 248, 255, 0.9);
+        display: flex;
+
+    }
+
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .sobrefilho .descsobre .imgmedico {
+        display: none;
+
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .iniciosecao p {
+        padding: 20px;
+        min-width: 426px;
+        width: 100%;
+        max-width: 768px
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .descsobre .desclista h1 {
+        font-size: 16px;
+        padding: 0px 0px 20px;
+
+    }
+}
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    #especialidades {
+        width: 100%;
+        min-width: 426px;
+        max-width: 768px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(68, 68, 68, 0.2);
+        border-top: 1px solid rgb(68, 68, 68, 0.2);
+    }
+
+    #especialidades .especialidadesfilho {
+        width: 100%;
+        min-width: 426px;
+        max-width: 768px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        width: 100%;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao h1 {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao p {
+        font-size: 13px;
+        width: 100%;
+
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao br {
+        display: none;
+
+    }
+
+    #cardspai {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #cardspai .cardsfilho {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        margin: 15px;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+    #cardspai .cardsfilho:hover {
+        transform: scale(1.1);
+    }
+
+    #cardspai .cardsfilho .imgcards {
+        width: 100%;
+    }
+
+    #cardspai .cardsfilho a {
+        text-decoration: none;
+        color: #0000008c;
+    }
+
+    #cardspai .cardsfilho a p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+    }
+
+    .especialidadesfilho .botao {
+        background-color: rgb(33, 33, 33);
+        width: 150px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        text-decoration: none;
+        border: 2px solid rgb(33, 33, 33, 1.0);
+        border-radius: 3px;
+        color: #f8f9fa;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.5S;
+    }
+
+    .especialidadesfilho .botao:hover {
+        background-color: rgb(243, 243, 243);
+        color: #444;
+
+    }
+}
+
+/**  AQUI FINALIZA A MEDIA QUERIES (RESPONSIVIDADE) VERSÃO TABLET  **/
+
+
+
+
+
+
+
+
+/**  AQUI INICIA A MEDIA QUERIES (RESPONSIVIDADE) VERSÃO TAB DESKTOP **/
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    #topopai,
+    body,
+    html,
+    #footerpai {
+        width: 100%;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    #topopai {
+        height: 130px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    body #footerpai {
+        width: 100%;
+        min-width: 769px;
+        max-width: 1023px;
+        height: 360px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    footer .cx-logo-rodape {
+        width: 100%;
+        min-width: 769px;
+        max-width: 1023px;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 40px;
+
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    #footerpai .subrodape {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(41, 40, 40, 1.0);
+        color: #f8f9fa;
+        position: relative;
+        top: 10px;
+        border-top: 1px solid rgb(240, 248, 255, 0.1);
+        font-size: 14px;
+    }
+
+    #footerpai .subrodape p {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        width: 100%;
+        min-width: 769px;
+        max-width: 1023px;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    header #topofilho {
+        min-width: 769px;
+        max-width: 1023px;
+        width: 768px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        padding: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    body .fundorecepcao {
+        background-image: url(img/apresentacao.png);
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        height: 400px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body .fundorecepcao .tituloh1 {
+        min-width: 769px;
+        max-width: 1023px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    body .fundorecepcao .tituloh1 h1 {
+        height: 100px;
+        font-size: 32px;
+        color: rgb(240, 248, 255, 0.9);
+        display: flex;
+
+    }
+
+}
+
+
+@media (min-width: 769px) and (max-width: 2000px) {
+    .descsobre .imgmedico img {
+        margin-right: 50px;
+        border-radius: 25px 0px 0px 25px;
+
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 2000px) {
+    .descsobre .imgbaikal img {
+        margin-right: 50px;
+        border-radius: 0px 25px 25px 0px;
+
+
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 2000px) {
+    .iniciosecao p {
+        padding: 20px;
+        width: 100%;
+        min-width: 769px;
+        max-width: 1023px;
+
+
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 2000px) {
+    .descsobre .desclista h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 34px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 750px;
+        height: 60px;
+        color: rgb(33, 33, 33, 1.0);
+
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    #especialidades {
+        width: 100%;
+        min-width: 769px;
+        max-width: 1023px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgb(68, 68, 68, 0.2);
+        border-top: 1px solid rgb(68, 68, 68, 0.2);
+    }
+
+    #especialidades .especialidadesfilho {
+        width: 100%;
+        min-width: 769px;
+        max-width: 1023px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        width: 100%;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao h1 {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao p {
+        font-size: 13px;
+        width: 100%;
+
+    }
+
+    #especialidades .especialidadesfilho .iniciosecao br {
+        display: none;
+
+    }
+
+    #cardspai {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #cardspai .cardsfilho {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        margin: 15px;
+        box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.2);
+        border-radius: 5px;
+        transition: 0.5s;
+    }
+
+    #cardspai .cardsfilho:hover {
+        transform: scale(1.1);
+    }
+
+    #cardspai .cardsfilho .imgcards {
+        width: 100%;
+    }
+
+    #cardspai .cardsfilho a {
+        text-decoration: none;
+        color: #0000008c;
+    }
+
+    #cardspai .cardsfilho a p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+    }
+
+    .especialidadesfilho .botao {
+        background-color: rgb(33, 33, 33);
+        width: 150px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        text-decoration: none;
+        border: 2px solid rgb(33, 33, 33, 1.0);
+        border-radius: 3px;
+        color: #f8f9fa;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.5S;
+    }
+
+    .especialidadesfilho .botao:hover {
+        background-color: rgb(243, 243, 243);
+        color: #444;
+
+    }
+}
+
+
+
+/**  AQUI FINALIZA A MEDIA QUERIES (RESPONSIVIDADE) VERSÃO TAB DESKTOP  **/
+
+
+/** AQUI INICIA O DATA ANIME **/
+
+[data-anime] {
+
+    opacity: 0;
+    transition: 1.2s;
+}
+
+[data-anime="left"] {
+
+    transform: translate3d(-500px, 0, 0);
+}
+
+[data-anime="right"] {
+
+    transform: translate3d(-100px, 0, 0);
+}
+
+[data-anime="bottom"] {
+
+    transform: translate3d(0, 300px, 0);
+}
+
+.animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/** AQUI FINALIZA O DATA ANIME **/
